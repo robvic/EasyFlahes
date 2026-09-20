@@ -26,6 +26,7 @@ let currentIndex = 0;
 let scoreConfig;
 let score;
 let toastTimer;
+let waitingMathJax = false;
 
 async function loadApp() {
   try {
@@ -91,9 +92,17 @@ function renderCard() {
   elements.code.textContent = card.code ?? '';
   elements.formula.hidden = !card.formula;
   elements.formula.textContent = card.formula ?? '';
-  if (card.formula && window.MathJax?.typesetPromise) {
-    window.MathJax.typesetClear?.([elements.formula]);
-    window.MathJax.typesetPromise([elements.formula]).catch(console.error);
+  if (card.formula) {
+    if (window.__mathjaxReady && window.MathJax?.typesetPromise) {
+      window.MathJax.typesetClear?.([elements.formula]);
+      window.MathJax.typesetPromise([elements.formula]).catch(console.error);
+    } else if (!waitingMathJax) {
+      waitingMathJax = true;
+      window.addEventListener('mathjax:ready', () => {
+        waitingMathJax = false;
+        renderCard();
+      }, { once: true });
+    }
   }
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
