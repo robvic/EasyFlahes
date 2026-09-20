@@ -41,3 +41,5 @@
 - https://github.com/langchain-ai/langgraph/blob/aa742fb31e2827d569b843e3600aeda2e0528e4b/libs/langgraph/tests/test_messages_state.py
 - https://docs.smith.langchain.com/observability/tutorials/observability
 - https://docs.smith.langchain.com/observability/concepts
+- https://docs.langchain.com/oss/python/langgraph/graph-api.md
+- https://docs.langchain.com/oss/python/langgraph/use-graph-api.md
