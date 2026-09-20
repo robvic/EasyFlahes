@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"storageKey": "easyflashes:datascience:v1",
+	"scoring": {
+		"again": 0,
+		"hard": 1,
+		"known": 2
+	},
+	"initialState": {
+		"points": 0,
+		"answered": 0,
+		"known": 0,
+		"streak": 0,
+		"bestStreak": 0,
+		"cardScores": {}
+	}
+}

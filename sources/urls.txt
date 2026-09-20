@@ -1,0 +1,9 @@
+- https://developers.google.com/machine-learning/crash-course
+- https://github.com/ageron/handson-ml3
+- https://scikit-learn.org/stable/user_guide.html
+- https://www.kaggle.com/learn
+- https://cs.stanford.edu/people/karpathy/convnetjs/
+- https://www.statlearning.com
+- https://hastie.su.domains/ElemStatLearn/
+- https://course.fast.ai
+- https://machinelearningmastery.com

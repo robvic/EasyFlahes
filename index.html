@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flashcards de ciência de dados com conceitos e Python.">
+  <title>Easy Flashes — Data Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Easy Flashes, início">
+      <span class="brand-mark">EF</span>
+      <span>Easy Flashes</span>
+    </a>
+
+    <div class="scoreboard" aria-label="Pontuação da sessão">
+      <div><span id="points">0</span><small>pontos</small></div>
+      <div><span id="streak">0</span><small>sequência</small></div>
+      <div><span id="accuracy">0%</span><small>domínio</small></div>
+    </div>
+
+    <button class="icon-button" id="resetButton" type="button" title="Reiniciar progresso" aria-label="Reiniciar progresso">
+      <i data-lucide="rotate-ccw"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="study-header" aria-label="Controles do baralho">
+      <div>
+        <p class="eyebrow">DATA SCIENCE / DECK 01</p>
+        <h1>Um conceito por vez.</h1>
+      </div>
+      <div class="deck-tools">
+        <label class="select-wrap">
+          <span class="sr-only">Filtrar por tópico</span>
+          <select id="topicFilter" aria-label="Filtrar por tópico">
+            <option value="all">Todos os tópicos</option>
+          </select>
+          <i data-lucide="chevron-down" aria-hidden="true"></i>
+        </label>
+        <button class="icon-button" id="shuffleButton" type="button" title="Embaralhar cards" aria-label="Embaralhar cards">
+          <i data-lucide="shuffle"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="study-area" aria-live="polite">
+      <div class="progress-row">
+        <span id="counter">1 / 100</span>
+        <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+        <span id="answeredCount">0 respondidos</span>
+      </div>
+
+      <article class="flashcard" id="flashcard" role="button" tabindex="0" aria-label="Virar flashcard" aria-pressed="false">
+        <span class="card-face card-front">
+          <span class="card-meta">
+            <span id="topic">Fundamentos</span>
+            <span id="cardType">Conceito</span>
+          </span>
+          <span class="card-content">
+            <span class="prompt-label">PERGUNTA</span>
+            <strong id="question">Carregando cards...</strong>
+          </span>
+          <span class="flip-hint"><i data-lucide="mouse-pointer-click"></i> Clique para revelar</span>
+        </span>
+
+        <span class="card-face card-back">
+          <span class="card-meta">
+            <span>RESPOSTA</span>
+            <span id="backTopic">Fundamentos</span>
+          </span>
+          <span class="answer-content">
+            <img id="cardImage" alt="" hidden>
+            <strong id="answer"></strong>
+            <code id="codeExample" hidden></code>
+          </span>
+          <a id="sourceLink" class="source-link" href="#" target="_blank" rel="noreferrer" aria-label="Abrir fonte do card">
+            Ver fonte <i data-lucide="external-link"></i>
+          </a>
+        </span>
+      </article>
+
+      <div class="rating-actions" id="ratingActions" aria-label="Avaliar resposta">
+        <button class="rating again" type="button" data-rating="again"><i data-lucide="x"></i><span>Errei<small>0 ponto</small></span></button>
+        <button class="rating hard" type="button" data-rating="hard"><i data-lucide="brain"></i><span>Difícil<small>+1 ponto</small></span></button>
+        <button class="rating known" type="button" data-rating="known"><i data-lucide="check"></i><span>Acertei<small>+2 pontos</small></span></button>
+      </div>
+
+      <nav class="card-navigation" aria-label="Navegação entre cards">
+        <button class="nav-button" id="previousButton" type="button"><i data-lucide="arrow-left"></i> Anterior</button>
+        <span><kbd>Espaço</kbd> vira o card</span>
+        <button class="nav-button" id="nextButton" type="button">Próximo <i data-lucide="arrow-right"></i></button>
+      </nav>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
