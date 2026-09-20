@@ -12,10 +12,7 @@
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
   <script>
     window.__mathjaxReady = false;
-    window.onMathJaxReady = () => {
-      window.__mathjaxReady = true;
-      window.dispatchEvent(new Event('mathjax:ready'));
-    };
+    window.__mathjaxFailed = false;
     window.MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -23,8 +20,27 @@
       },
       svg: { fontCache: 'global' }
     };
+    window.loadMathJax = (sources, index = 0) => {
+      if (index >= sources.length) {
+        window.__mathjaxFailed = true;
+        window.dispatchEvent(new Event('mathjax:failed'));
+        return;
+      }
+      const script = document.createElement('script');
+      script.src = sources[index];
+      script.defer = true;
+      script.onload = () => {
+        window.__mathjaxReady = true;
+        window.dispatchEvent(new Event('mathjax:ready'));
+      };
+      script.onerror = () => window.loadMathJax(sources, index + 1);
+      document.head.appendChild(script);
+    };
+    window.loadMathJax([
+      'https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js',
+      'https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js'
+    ]);
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js" defer onload="onMathJaxReady()" onerror="this.onerror=null;this.src='https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js';"></script>
   <script src="app.js" defer></script>
 </head>
 <body>

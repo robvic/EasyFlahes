@@ -96,11 +96,16 @@ function renderCard() {
     if (window.__mathjaxReady && window.MathJax?.typesetPromise) {
       window.MathJax.typesetClear?.([elements.formula]);
       window.MathJax.typesetPromise([elements.formula]).catch(console.error);
+    } else if (window.__mathjaxFailed) {
+      waitingMathJax = false;
     } else if (!waitingMathJax) {
       waitingMathJax = true;
       window.addEventListener('mathjax:ready', () => {
         waitingMathJax = false;
         renderCard();
+      }, { once: true });
+      window.addEventListener('mathjax:failed', () => {
+        waitingMathJax = false;
       }, { once: true });
     }
   }
