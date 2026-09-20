@@ -35,3 +35,9 @@
 - https://shap.readthedocs.io/en/latest/
 - https://www.statsmodels.org/stable/examples/notebooks/generated/autoregressions.html
 - https://numba.readthedocs.io/en/stable/cuda/kernels.html
+- https://huggingface.co/docs/transformers/model_doc/auto
+- https://github.com/langchain-ai/langchain/blob/f72f934cefd2bd322af7a13d653b767ba2d0c236/openwiki/composability.md
+- https://github.com/langchain-ai/langchain/blob/f72f934cefd2bd322af7a13d653b767ba2d0c236/openwiki/runnables.md
+- https://github.com/langchain-ai/langgraph/blob/aa742fb31e2827d569b843e3600aeda2e0528e4b/libs/langgraph/tests/test_messages_state.py
+- https://docs.smith.langchain.com/observability/tutorials/observability
+- https://docs.smith.langchain.com/observability/concepts
