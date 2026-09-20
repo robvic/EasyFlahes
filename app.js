@@ -93,6 +93,7 @@ function renderCard() {
   elements.formula.hidden = !card.formula;
   elements.formula.textContent = card.formula ?? '';
   if (card.formula) {
+    const formulaCardId = card.id;
     if (window.__mathjaxReady) {
       typesetFormula();
     } else if (window.__mathjaxFailed) {
@@ -101,7 +102,7 @@ function renderCard() {
       waitingMathJax = true;
       window.addEventListener('mathjax:ready', () => {
         waitingMathJax = false;
-        typesetFormula();
+        if (deck[currentIndex]?.id === formulaCardId) typesetFormula();
       }, { once: true });
       window.addEventListener('mathjax:failed', () => {
         waitingMathJax = false;
@@ -116,7 +117,13 @@ function renderCard() {
 function typesetFormula() {
   if (!elements.formula.textContent || !window.MathJax?.typesetPromise) return;
   window.MathJax.typesetClear?.([elements.formula]);
-  window.MathJax.typesetPromise([elements.formula]).catch(console.error);
+  window.MathJax.typesetPromise([elements.formula]).catch(() => markMathJaxFailed());
+}
+
+function markMathJaxFailed() {
+  if (window.__mathjaxFailed) return;
+  window.__mathjaxFailed = true;
+  window.dispatchEvent(new Event('mathjax:failed'));
 }
 
 function renderScore() {
