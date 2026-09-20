@@ -93,16 +93,15 @@ function renderCard() {
   elements.formula.hidden = !card.formula;
   elements.formula.textContent = card.formula ?? '';
   if (card.formula) {
-    if (window.__mathjaxReady && window.MathJax?.typesetPromise) {
-      window.MathJax.typesetClear?.([elements.formula]);
-      window.MathJax.typesetPromise([elements.formula]).catch(console.error);
+    if (window.__mathjaxReady) {
+      typesetFormula();
     } else if (window.__mathjaxFailed) {
       waitingMathJax = false;
     } else if (!waitingMathJax) {
       waitingMathJax = true;
       window.addEventListener('mathjax:ready', () => {
         waitingMathJax = false;
-        renderCard();
+        typesetFormula();
       }, { once: true });
       window.addEventListener('mathjax:failed', () => {
         waitingMathJax = false;
@@ -112,6 +111,12 @@ function renderCard() {
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
   elements.image.alt = card.image ? `Referência visual para ${card.topic}` : '';
+}
+
+function typesetFormula() {
+  if (!elements.formula.textContent || !window.MathJax?.typesetPromise) return;
+  window.MathJax.typesetClear?.([elements.formula]);
+  window.MathJax.typesetPromise([elements.formula]).catch(console.error);
 }
 
 function renderScore() {
