@@ -34,3 +34,4 @@
 - https://cloud.google.com/explainable-ai/docs/overview
 - https://shap.readthedocs.io/en/latest/
 - https://www.statsmodels.org/stable/examples/notebooks/generated/autoregressions.html
+- https://numba.readthedocs.io/en/stable/cuda/kernels.html
