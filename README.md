@@ -94,6 +94,19 @@ Exemplo:
 ./scripts/upload-to-gcs.ps1 -DeleteRemote
 ```
 
+### CI/CD (deploy automático)
+
+O deploy para o GCS é automatizado via GitHub Actions, definido em `.github/workflows/deploy.yml`.
+
+- **Gatilho**: toda vez que há um `push` na branch `main`.
+- **Passos do workflow**:
+  1. `actions/checkout` — faz o checkout do repositório.
+  2. `google-github-actions/auth` — autentica no Google Cloud usando a service account armazenada no secret `GCP_SA_KEY`.
+  3. `google-github-actions/setup-gcloud` — instala o Google Cloud CLI no runner.
+  4. Execução do `scripts/upload-to-gcs.ps1 -DeleteRemote` (via `pwsh`, disponível por padrão nos runners do GitHub) — sincroniza o repositório com o bucket e remove do bucket os arquivos que não existem mais no projeto.
+
+Ou seja, qualquer alteração enviada para `main` é publicada automaticamente no GCS, sem necessidade de rodar o script manualmente.
+
 ---
 
 ## Como acessar?
