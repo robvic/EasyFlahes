@@ -10,6 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -78,6 +88,7 @@
           <span class="answer-content">
             <img id="cardImage" alt="" hidden>
             <strong id="answer"></strong>
+            <div id="formulaExample" class="formula-block" hidden></div>
             <code id="codeExample" hidden></code>
           </span>
           <a id="sourceLink" class="source-link" href="#" target="_blank" rel="noreferrer" aria-label="Abrir fonte do card">

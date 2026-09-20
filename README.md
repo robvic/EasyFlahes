@@ -32,7 +32,7 @@ O projeto é estruturado como uma aplicação estática web, com separação cla
 
 - `index.html` — estrutura da interface do app
 - `styles.css` — estilos visuais e layout
-- `app.js` — lógica da aplicação, renderização dos cards, filtros, pontuação e interação
+- `app.js` — lógica da aplicação, renderização dos cards (conceito, código e fórmula LaTeX), filtros, pontuação e interação
 - `data/cards.json` — base de conhecimentos em formato de flashcards
 - `data/scores.json` — configuração de pontuação e persistência do progresso
 - `scripts/upload-to-gcs.ps1` — script de sincronização com o bucket no Google Cloud Storage
@@ -55,11 +55,12 @@ Os cards ficam em `data/cards.json` e cada item pode conter campos como:
 
 - `id`: identificador único
 - `topic`: tópico do card
-- `type`: `concept` ou `code`
+- `type`: `concept`, `code` ou `formula`
 - `question`: pergunta principal
 - `answer`: resposta explicativa
 - `source`: referência externa
 - `code`: trecho de código opcional
+- `formula`: expressão matemática em LaTeX opcional (renderizada no card)
 - `image`: URL opcional para imagem/ilustração
 
 Esse formato permite enriquecer o conteúdo sem necessidade de alterar a lógica do front-end.
@@ -133,9 +134,11 @@ A manutenção mais importante do projeto está no arquivo `data/cards.json`.
 6. Escolha `type`:
    - `concept` para explicação teórica
    - `code` para exemplos de código
+   - `formula` para ligar conceito a uma expressão matemática em LaTeX
 7. Inclua `source` sempre que possível, para referência e confiabilidade.
 8. Se o card exigir e.g. snippet de Python, use `code`.
-9. Se houver ilustração relevante, use `image` com URL externa.
+9. Se o card exigir equação, use `formula` com delimitadores LaTeX (`$$ ... $$`).
+10. Se houver ilustração relevante, use `image` com URL externa.
 
 ### Exemplo de card
 

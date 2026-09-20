@@ -6,6 +6,7 @@ const elements = {
   backTopic: document.querySelector('#backTopic'),
   cardType: document.querySelector('#cardType'),
   code: document.querySelector('#codeExample'),
+  formula: document.querySelector('#formulaExample'),
   image: document.querySelector('#cardImage'),
   source: document.querySelector('#sourceLink'),
   counter: document.querySelector('#counter'),
@@ -81,13 +82,19 @@ function renderCard() {
   elements.answer.textContent = card.answer;
   elements.topic.textContent = card.topic;
   elements.backTopic.textContent = card.topic;
-  elements.cardType.textContent = card.type === 'code' ? 'Python' : 'Conceito';
+  elements.cardType.textContent = card.type === 'code' ? 'Python' : card.type === 'formula' ? 'Fórmula' : 'Conceito';
   elements.source.href = card.source;
   elements.counter.textContent = `${currentIndex + 1} / ${deck.length}`;
   elements.progress.style.width = `${((currentIndex + 1) / deck.length) * 100}%`;
 
   elements.code.hidden = !card.code;
   elements.code.textContent = card.code ?? '';
+  elements.formula.hidden = !card.formula;
+  elements.formula.textContent = card.formula ?? '';
+  if (card.formula && window.MathJax?.typesetPromise) {
+    window.MathJax.typesetClear?.([elements.formula]);
+    window.MathJax.typesetPromise([elements.formula]).catch(console.error);
+  }
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
   elements.image.alt = card.image ? `Referência visual para ${card.topic}` : '';
