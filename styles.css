@@ -219,6 +219,13 @@ h1 { margin: 0; font-size: clamp(27px, 4vw, 42px); line-height: 1.1; letter-spac
   white-space: pre-wrap;
 }
 
+.answer-content .formula-block {
+  padding: 16px;
+  overflow-x: auto;
+  border-left: 3px solid var(--green);
+  background: #2a332f;
+}
+
 .answer-content img {
   width: auto;
   max-width: 180px;
