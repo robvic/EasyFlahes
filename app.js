@@ -90,32 +90,45 @@ function renderCard() {
 
   elements.code.hidden = !card.code;
   elements.code.textContent = card.code ?? '';
-  elements.formula.hidden = !card.formula;
-  elements.formula.textContent = card.formula ?? '';
-  if (card.formula) {
-    const formulaCardId = card.id;
-    if (window.__mathjaxReady) {
-      typesetFormula();
-    } else if (window.__mathjaxFailed) {
-      waitingMathJax = false;
-    } else if (!waitingMathJax) {
-      waitingMathJax = true;
-      window.addEventListener('mathjax:ready', () => {
-        waitingMathJax = false;
-        if (deck[currentIndex]?.id === formulaCardId) typesetFormula();
-      }, { once: true });
-      window.addEventListener('mathjax:failed', () => {
-        waitingMathJax = false;
-      }, { once: true });
-    }
-  }
+  handleFormulaRendering(card);
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
   elements.image.alt = card.image ? `Referência visual para ${card.topic}` : '';
 }
 
-function typesetFormula() {
-  if (!elements.formula.textContent || !window.MathJax?.typesetPromise) return;
+function handleFormulaRendering(card) {
+  elements.formula.hidden = !card.formula;
+  elements.formula.dataset.source = card.formula ?? '';
+  elements.formula.textContent = card.formula ?? '';
+
+  if (!card.formula) return;
+
+  if (window.__mathjaxReady) {
+    typesetFormula(card.formula);
+    return;
+  }
+
+  if (window.__mathjaxFailed) {
+    waitingMathJax = false;
+    return;
+  }
+
+  if (!waitingMathJax) {
+    const formulaCardId = card.id;
+    waitingMathJax = true;
+    window.addEventListener('mathjax:ready', () => {
+      waitingMathJax = false;
+      if (deck[currentIndex]?.id === formulaCardId) typesetFormula(card.formula);
+    }, { once: true });
+    window.addEventListener('mathjax:failed', () => {
+      waitingMathJax = false;
+    }, { once: true });
+  }
+}
+
+function typesetFormula(formulaSource = elements.formula.dataset.source) {
+  if (!formulaSource || !window.MathJax?.typesetPromise) return;
+  elements.formula.replaceChildren(document.createTextNode(formulaSource));
   window.MathJax.typesetClear?.([elements.formula]);
   window.MathJax.typesetPromise([elements.formula]).catch(() => markMathJaxFailed());
 }
