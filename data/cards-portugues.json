@@ -1,0 +1,10 @@
+{
+	"cards": [
+		{"id":"pt-001","topic":"Classes gramaticais","type":"concept","question":"O que é um substantivo?","answer":"É a classe de palavras usada para nomear seres, objetos, lugares, sentimentos e ideias.","source":"https://www.normaculta.com.br/substantivo/"},
+		{"id":"pt-002","topic":"Classes gramaticais","type":"concept","question":"O que é um verbo?","answer":"É a classe de palavras que indica ação, estado, mudança de estado ou fenômeno da natureza.","source":"https://www.normaculta.com.br/verbo/"},
+		{"id":"pt-003","topic":"Classes gramaticais","type":"concept","question":"O que é um pronome?","answer":"É a palavra que substitui, acompanha ou retoma o substantivo dentro da frase.","source":"https://www.normaculta.com.br/pronome/"},
+		{"id":"pt-004","topic":"Ortografia","type":"concept","question":"Qual é a diferença entre por que, porque, por quê e porquê?","answer":"\"Por que\" é usado em perguntas ou como equivalente de \"por qual motivo\"; \"porque\" introduz resposta ou explicação; \"por quê\" aparece no fim da frase; \"porquê\" é substantivo e normalmente vem com artigo.","source":"https://www.normaculta.com.br/por-que-porque-por-que-ou-porque/"},
+		{"id":"pt-005","topic":"Sintaxe","type":"concept","question":"O que é sujeito oculto?","answer":"É o sujeito que não aparece expresso na oração, mas pode ser identificado pela desinência verbal ou pelo contexto.","source":"https://www.normaculta.com.br/sujeito-oculto/"},
+		{"id":"pt-006","topic":"Ortografia","type":"concept","question":"Qual é a diferença entre mas e mais?","answer":"\"Mas\" é conjunção adversativa, com ideia de oposição; \"mais\" indica aumento, intensidade ou quantidade.","source":"https://www.normaculta.com.br/mas-ou-mais/"}
+	]
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Flashcards de ciência de dados com conceitos e Python.">
-  <title>Easy Flashes — Data Science</title>
+  <meta name="description" content="Flashcards de estudo por disciplina, com seleção de matéria e tópicos.">
+  <title>Easy Flashes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -64,10 +64,18 @@
   <main>
     <section class="study-header" aria-label="Controles do baralho">
       <div>
-        <p class="eyebrow">DATA SCIENCE / DECK 01</p>
+        <p class="eyebrow" id="deckEyebrow">DADOS E IA / DECK 01</p>
         <h1>Um conceito por vez.</h1>
       </div>
       <div class="deck-tools">
+        <label class="select-wrap">
+          <span class="sr-only">Selecionar disciplina</span>
+          <select id="subjectFilter" aria-label="Selecionar disciplina">
+            <option value="dados-e-ia">Dados e IA</option>
+            <option value="portugues">Português</option>
+          </select>
+          <i data-lucide="chevron-down" aria-hidden="true"></i>
+        </label>
         <label class="select-wrap">
           <span class="sr-only">Filtrar por tópico</span>
           <select id="topicFilter" aria-label="Filtrar por tópico">

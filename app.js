@@ -16,9 +16,26 @@ const elements = {
   streak: document.querySelector('#streak'),
   accuracy: document.querySelector('#accuracy'),
   ratings: document.querySelector('#ratingActions'),
+  subjectFilter: document.querySelector('#subjectFilter'),
   topicFilter: document.querySelector('#topicFilter'),
+  deckEyebrow: document.querySelector('#deckEyebrow'),
   toast: document.querySelector('#toast')
 };
+
+const SUBJECTS = [
+  {
+    id: 'dados-e-ia',
+    label: 'Dados e IA',
+    eyebrow: 'DADOS E IA / DECK 01',
+    dataFile: 'data/cards-dados-e-ia.json'
+  },
+  {
+    id: 'portugues',
+    label: 'Português',
+    eyebrow: 'PORTUGUÊS / DECK 02',
+    dataFile: 'data/cards-portugues.json'
+  }
+];
 
 let allCards = [];
 let deck = [];
@@ -27,25 +44,15 @@ let scoreConfig;
 let score;
 let toastTimer;
 let waitingMathJax = false;
+let activeSubject = SUBJECTS[0];
 
 async function loadApp() {
   try {
-    const [cardsResponse, scoresResponse] = await Promise.all([
-      fetch('data/cards.json'),
-      fetch('data/scores.json')
-    ]);
-
-    if (!cardsResponse.ok || !scoresResponse.ok) throw new Error('Falha ao carregar os dados.');
-
-    const cardsData = await cardsResponse.json();
+    const scoresResponse = await fetch('data/scores.json');
+    if (!scoresResponse.ok) throw new Error('Falha ao carregar os dados.');
     scoreConfig = await scoresResponse.json();
-    allCards = cardsData.cards;
-    deck = [...allCards];
-    score = loadScore();
-
-    populateTopics();
-    renderCard();
-    renderScore();
+    populateSubjects();
+    await loadSubject(activeSubject.id);
     window.lucide?.createIcons();
   } catch (error) {
     elements.question.textContent = 'Não foi possível carregar o baralho.';
@@ -54,9 +61,35 @@ async function loadApp() {
   }
 }
 
+async function loadSubject(subjectId) {
+  const subject = SUBJECTS.find(item => item.id === subjectId);
+  if (!subject) throw new Error('Disciplina inválida.');
+
+  const cardsResponse = await fetch(subject.dataFile);
+  if (!cardsResponse.ok) throw new Error('Falha ao carregar a disciplina.');
+
+  const cardsData = await cardsResponse.json();
+  activeSubject = subject;
+  allCards = cardsData.cards;
+  deck = [...allCards];
+  currentIndex = 0;
+  score = loadScore();
+
+  renderSubjectInfo();
+  populateTopics();
+  renderCard();
+  renderScore();
+}
+
+function getScoreStorageKey() {
+  return activeSubject.id === 'dados-e-ia'
+    ? scoreConfig.storageKey
+    : `${scoreConfig.storageKey}:${activeSubject.id}`;
+}
+
 function loadScore() {
   try {
-    const saved = JSON.parse(localStorage.getItem(scoreConfig.storageKey));
+    const saved = JSON.parse(localStorage.getItem(getScoreStorageKey()));
     return { ...scoreConfig.initialState, ...saved, cardScores: saved?.cardScores ?? {} };
   } catch {
     return structuredClone(scoreConfig.initialState);
@@ -64,17 +97,35 @@ function loadScore() {
 }
 
 function saveScore() {
-  localStorage.setItem(scoreConfig.storageKey, JSON.stringify(score));
+  localStorage.setItem(getScoreStorageKey(), JSON.stringify(score));
+}
+
+function populateSubjects() {
+  elements.subjectFilter.length = 0;
+  SUBJECTS.forEach(subject => elements.subjectFilter.add(new Option(subject.label, subject.id)));
+}
+
+function renderSubjectInfo() {
+  elements.subjectFilter.value = activeSubject.id;
+  elements.deckEyebrow.textContent = activeSubject.eyebrow;
+  document.title = `Easy Flashes — ${activeSubject.label}`;
 }
 
 function populateTopics() {
+  elements.topicFilter.length = 1;
+  elements.topicFilter.options[0].textContent = 'Todos os tópicos';
+  elements.topicFilter.options[0].value = 'all';
+  elements.topicFilter.value = 'all';
   const topics = [...new Set(allCards.map(card => card.topic))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
   topics.forEach(topic => elements.topicFilter.add(new Option(topic, topic)));
 }
 
 function renderCard() {
   const card = deck[currentIndex];
-  if (!card) return;
+  if (!card) {
+    renderEmptyDeck();
+    return;
+  }
 
   elements.flashcard.classList.remove('flipped');
   elements.flashcard.setAttribute('aria-pressed', 'false');
@@ -84,7 +135,8 @@ function renderCard() {
   elements.topic.textContent = card.topic;
   elements.backTopic.textContent = card.topic;
   elements.cardType.textContent = card.type === 'code' ? 'Python' : card.type === 'formula' ? 'Fórmula' : 'Conceito';
-  elements.source.href = card.source;
+  elements.source.hidden = !card.source;
+  elements.source.href = card.source ?? '#';
   elements.counter.textContent = `${currentIndex + 1} / ${deck.length}`;
   elements.progress.style.width = `${((currentIndex + 1) / deck.length) * 100}%`;
 
@@ -94,6 +146,27 @@ function renderCard() {
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
   elements.image.alt = card.image ? `Referência visual para ${card.topic}` : '';
+}
+
+function renderEmptyDeck() {
+  elements.flashcard.classList.remove('flipped');
+  elements.flashcard.setAttribute('aria-pressed', 'false');
+  elements.ratings.classList.remove('visible');
+  elements.question.textContent = 'Nenhum card disponível nesta disciplina.';
+  elements.answer.textContent = 'Adicione cards ao arquivo JSON da disciplina selecionada.';
+  elements.topic.textContent = activeSubject.label;
+  elements.backTopic.textContent = activeSubject.label;
+  elements.cardType.textContent = 'Conceito';
+  elements.source.hidden = true;
+  elements.code.hidden = true;
+  elements.code.textContent = '';
+  elements.formula.hidden = true;
+  elements.formula.textContent = '';
+  elements.image.hidden = true;
+  elements.image.src = '';
+  elements.image.alt = '';
+  elements.counter.textContent = '0 / 0';
+  elements.progress.style.width = '0%';
 }
 
 function handleFormulaRendering(card) {
@@ -151,18 +224,21 @@ function renderScore() {
 }
 
 function flipCard() {
+  if (!deck.length) return;
   const flipped = elements.flashcard.classList.toggle('flipped');
   elements.flashcard.setAttribute('aria-pressed', String(flipped));
   elements.ratings.classList.toggle('visible', flipped);
 }
 
 function move(direction) {
+  if (deck.length < 2) return;
   currentIndex = (currentIndex + direction + deck.length) % deck.length;
   renderCard();
 }
 
 function rateCard(rating) {
   const card = deck[currentIndex];
+  if (!card) return;
   const previousRating = score.cardScores[card.id];
   const previousPoints = previousRating ? scoreConfig.scoring[previousRating] : 0;
   const nextPoints = scoreConfig.scoring[rating];
@@ -187,6 +263,10 @@ function filterDeck(topic) {
 }
 
 function shuffleDeck() {
+  if (deck.length < 2) {
+    showToast('Poucos cards para embaralhar');
+    return;
+  }
   for (let index = deck.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
     [deck[index], deck[randomIndex]] = [deck[randomIndex], deck[index]];
@@ -221,6 +301,18 @@ document.querySelector('#previousButton').addEventListener('click', () => move(-
 document.querySelector('#nextButton').addEventListener('click', () => move(1));
 document.querySelector('#shuffleButton').addEventListener('click', shuffleDeck);
 document.querySelector('#resetButton').addEventListener('click', resetProgress);
+elements.subjectFilter.addEventListener('change', async event => {
+  const previousSubjectId = activeSubject.id;
+
+  try {
+    await loadSubject(event.target.value);
+    showToast(`Disciplina: ${activeSubject.label}`);
+  } catch (error) {
+    elements.subjectFilter.value = previousSubjectId;
+    console.error(error);
+    showToast('Não foi possível carregar a disciplina');
+  }
+});
 elements.topicFilter.addEventListener('change', event => filterDeck(event.target.value));
 elements.ratings.addEventListener('click', event => {
   const button = event.target.closest('[data-rating]');

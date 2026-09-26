@@ -1,10 +1,10 @@
-# Easy Flashes — Data Science
+# Easy Flashes
 
 ## Sobre o projeto
 
-O Easy Flashes é uma aplicação web de estudo baseada em flashcards para revisão de conceitos de ciência de dados, machine learning e estatística.
+O Easy Flashes é uma aplicação web de estudo baseada em flashcards para revisão de conteúdos por disciplina.
 
-A proposta do projeto é simples e prática: permitir que o usuário revise tópicos importantes em pequenos blocos, com foco em memorização ativa, rapidez de consulta e progresso contínuo. Os cards cobrem temas como:
+A proposta do projeto é simples e prática: permitir que o usuário revise tópicos importantes em pequenos blocos, com foco em memorização ativa, rapidez de consulta e progresso contínuo. Os cards podem ser organizados por disciplina, com baralhos separados em arquivos JSON, cobrindo temas como:
 
 - fundamentos de machine learning
 - estatística e avaliação
@@ -33,7 +33,8 @@ O projeto é estruturado como uma aplicação estática web, com separação cla
 - `index.html` — estrutura da interface do app
 - `styles.css` — estilos visuais e layout
 - `app.js` — lógica da aplicação, renderização dos cards (conceito, código e fórmula LaTeX), filtros, pontuação e interação
-- `data/cards.json` — base de conhecimentos em formato de flashcards
+- `data/cards-dados-e-ia.json` — baralho da disciplina de dados e IA
+- `data/cards-portugues.json` — baralho da disciplina de português
 - `data/scores.json` — configuração de pontuação e persistência do progresso
 - `scripts/upload-to-gcs.ps1` — script de sincronização com o bucket no Google Cloud Storage
 
@@ -41,8 +42,9 @@ O projeto é estruturado como uma aplicação estática web, com separação cla
 
 1. O navegador carrega `index.html`.
 2. O JavaScript executa `loadApp()` e busca os arquivos JSON em `data/`.
-3. Os cards são carregados em memória e renderizados dinamicamente.
+3. O usuário escolhe a disciplina no submenu e o respectivo arquivo JSON é carregado em memória.
 4. A interação do usuário ocorre no front-end:
+   - selecionar disciplina
    - virar card
    - navegar entre cards
    - filtrar por assunto
@@ -51,7 +53,7 @@ O projeto é estruturado como uma aplicação estática web, com separação cla
 
 ### Dados dos cards
 
-Os cards ficam em `data/cards.json` e cada item pode conter campos como:
+Os cards ficam em arquivos como `data/cards-dados-e-ia.json` e `data/cards-portugues.json`, e cada item pode conter campos como:
 
 - `id`: identificador único
 - `topic`: tópico do card
@@ -122,11 +124,11 @@ Esse é o endereço público do app hospedado no GCS.
 
 ## Como manter o projeto (enriquecimento dos cards)
 
-A manutenção mais importante do projeto está no arquivo `data/cards.json`.
+A manutenção mais importante do projeto está nos arquivos de cards em `data/`, um por disciplina.
 
 ### Como adicionar ou ajustar cards
 
-1. Abra `data/cards.json`.
+1. Abra o arquivo JSON da disciplina desejada em `data/`.
 2. Adicione um novo objeto no array `cards`.
 3. Preserve a estrutura do JSON.
 4. Use `id` único para cada card.
@@ -176,4 +178,4 @@ Depois de atualizar os cards:
 
 Este projeto foi pensado para funcionar como um material de estudo leve, acessível e fácil de manter. A simplicidade da arquitetura — HTML, CSS, JavaScript e JSON — torna o processo de evolução muito simples: adicionar conteúdo é quase todo o trabalho, e a aplicação continua estável e rápida.
 
-Se o objetivo for expandir o deck, o principal caminho é continuar enriquecendo `data/cards.json` com mais tópicos, explicações e exemplos reais de ciência de dados.
+Se o objetivo for expandir o projeto, o principal caminho é continuar enriquecendo os arquivos JSON das disciplinas com mais tópicos, explicações e exemplos relevantes para cada área.
