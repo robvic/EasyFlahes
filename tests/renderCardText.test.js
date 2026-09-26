@@ -1,4 +1,4 @@
-const test = require('node:test');
+const { test, after } = require('node:test');
 const assert = require('node:assert/strict');
 
 function createMockNode(tagName = 'div') {
@@ -35,12 +35,23 @@ function createMockNode(tagName = 'div') {
   return node;
 }
 
+const originalDocument = global.document;
+
 global.document = {
   createElement: tagName => createMockNode(tagName),
   createTextNode: value => value
 };
 
 const { renderCardText } = require('../card-text.js');
+
+after(() => {
+  if (originalDocument === undefined) {
+    delete global.document;
+    return;
+  }
+
+  global.document = originalDocument;
+});
 
 test('renderCardText keeps plain text cards unchanged', () => {
   const target = createMockNode('strong');
@@ -72,4 +83,16 @@ test('renderCardText renders ruby markup when furigana is provided', () => {
   assert.equal(ruby.children[0], '日本');
   assert.equal(reading.tagName, 'RT');
   assert.equal(reading.textContent, 'にほん');
+});
+
+test('renderCardText prefers localized display text over fallback text when they differ', () => {
+  const target = createMockNode('strong');
+  renderCardText(target, 'city, cities', { text: '都市', furigana: 'とし' });
+
+  const wrapper = target.children[0];
+  const ruby = wrapper.children[0];
+
+  assert.equal(target.textContent, '都市とし');
+  assert.equal(ruby.children[0], '都市');
+  assert.equal(ruby.children[1].textContent, 'とし');
 });
