@@ -21,6 +21,9 @@ const elements = {
   deckEyebrow: document.querySelector('#deckEyebrow'),
   toast: document.querySelector('#toast')
 };
+const renderLocalizedCardText = window.renderCardText ?? ((element, text) => {
+  element.textContent = text ?? '';
+});
 
 const SUBJECTS = [
   {
@@ -34,6 +37,12 @@ const SUBJECTS = [
     label: 'Português',
     eyebrow: 'PORTUGUÊS / DECK 02',
     dataFile: 'data/cards-portugues.json'
+  },
+  {
+    id: 'japones',
+    label: 'Japonês',
+    eyebrow: 'JAPONÊS / DECK 03',
+    dataFile: 'data/cards-japones.json'
   }
 ];
 
@@ -144,8 +153,8 @@ function renderCard() {
   elements.flashcard.classList.remove('flipped');
   elements.flashcard.setAttribute('aria-pressed', 'false');
   elements.ratings.classList.remove('visible');
-  elements.question.textContent = card.question;
-  elements.answer.textContent = card.answer;
+  renderLocalizedCardText(elements.question, card.question, card.questionDisplay);
+  renderLocalizedCardText(elements.answer, card.answer, card.answerDisplay);
   elements.topic.textContent = card.topic;
   elements.backTopic.textContent = card.topic;
   elements.cardType.textContent = card.type === 'code' ? 'Python' : card.type === 'formula' ? 'Fórmula' : 'Conceito';

@@ -45,3 +45,4 @@
 - https://docs.langchain.com/oss/python/langgraph/use-graph-api.md
 - https://www.normaculta.com.br/
 - https://www.normaculta.com.br/gramatica/
+- https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt

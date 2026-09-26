@@ -35,6 +35,7 @@ O projeto é estruturado como uma aplicação estática web, com separação cla
 - `app.js` — lógica da aplicação, renderização dos cards (conceito, código e fórmula LaTeX), filtros, pontuação e interação
 - `data/cards-dados-e-ia.json` — baralho da disciplina de dados e IA
 - `data/cards-portugues.json` — baralho da disciplina de português
+- `data/cards-japones.json` — baralho da disciplina de japonês
 - `data/scores.json` — configuração de pontuação e persistência do progresso
 - `scripts/upload-to-gcs.ps1` — script de sincronização com o bucket no Google Cloud Storage
 
@@ -60,6 +61,8 @@ Os cards ficam em arquivos como `data/cards-dados-e-ia.json` e `data/cards-portu
 - `type`: `concept`, `code` ou `formula`
 - `question`: pergunta principal
 - `answer`: resposta explicativa
+- `questionDisplay`: objeto opcional para renderização especial da pergunta, no formato `{ "text": "...", "furigana": "..." }` (`furigana` é opcional)
+- `answerDisplay`: objeto opcional para renderização especial da resposta, no formato `{ "text": "...", "furigana": "..." }` (`furigana` é opcional)
 - `source`: referência externa
 - `code`: trecho de código opcional
 - `formula`: expressão matemática em LaTeX opcional (renderizada no card)
@@ -140,7 +143,8 @@ A manutenção mais importante do projeto está nos arquivos de cards em `data/`
 7. Inclua `source` sempre que possível, para referência e confiabilidade.
 8. Se o card exigir e.g. snippet de Python, use `code`.
 9. Se o card exigir equação, use `formula` com delimitadores LaTeX (`$$ ... $$`).
-10. Se houver ilustração relevante, use `image` com URL externa.
+10. Se o card exigir renderização especial, use `questionDisplay` e/ou `answerDisplay` com `{ "text": "...", "furigana": "..." }`.
+11. Se houver ilustração relevante, use `image` com URL externa.
 
 ### Exemplo de card
 

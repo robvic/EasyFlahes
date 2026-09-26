@@ -1,2 +1,3 @@
 *.code-workspace
 key.json
+node_modules/
