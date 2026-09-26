@@ -45,6 +45,7 @@ let score;
 let toastTimer;
 let waitingMathJax = false;
 let activeSubject = SUBJECTS[0];
+let subjectLoadToken = 0;
 
 async function loadApp() {
   try {
@@ -64,21 +65,23 @@ async function loadApp() {
 async function loadSubject(subjectId) {
   const subject = SUBJECTS.find(item => item.id === subjectId);
   if (!subject) throw new Error('Disciplina inválida.');
+  const currentLoadToken = ++subjectLoadToken;
 
   const cardsResponse = await fetch(subject.dataFile);
   if (!cardsResponse.ok) throw new Error('Falha ao carregar a disciplina.');
 
   const cardsData = await cardsResponse.json();
+  if (currentLoadToken !== subjectLoadToken) return false;
+
   activeSubject = subject;
   allCards = cardsData.cards;
-  deck = [...allCards];
-  currentIndex = 0;
   score = loadScore();
 
   renderSubjectInfo();
   populateTopics();
-  renderCard();
+  applyTopicFilter('all');
   renderScore();
+  return true;
 }
 
 function getScoreStorageKey() {
@@ -115,9 +118,15 @@ function populateTopics() {
   elements.topicFilter.length = 1;
   elements.topicFilter.options[0].textContent = 'Todos os tópicos';
   elements.topicFilter.options[0].value = 'all';
-  elements.topicFilter.value = 'all';
   const topics = [...new Set(allCards.map(card => card.topic))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
   topics.forEach(topic => elements.topicFilter.add(new Option(topic, topic)));
+}
+
+function applyTopicFilter(topic = 'all') {
+  elements.topicFilter.value = topic;
+  deck = topic === 'all' ? [...allCards] : allCards.filter(card => card.topic === topic);
+  currentIndex = 0;
+  renderCard();
 }
 
 function renderCard() {
@@ -257,9 +266,7 @@ function rateCard(rating) {
 }
 
 function filterDeck(topic) {
-  deck = topic === 'all' ? [...allCards] : allCards.filter(card => card.topic === topic);
-  currentIndex = 0;
-  renderCard();
+  applyTopicFilter(topic);
 }
 
 function shuffleDeck() {
@@ -303,14 +310,17 @@ document.querySelector('#shuffleButton').addEventListener('click', shuffleDeck);
 document.querySelector('#resetButton').addEventListener('click', resetProgress);
 elements.subjectFilter.addEventListener('change', async event => {
   const previousSubjectId = activeSubject.id;
+  elements.subjectFilter.disabled = true;
 
   try {
-    await loadSubject(event.target.value);
-    showToast(`Disciplina: ${activeSubject.label}`);
+    const loaded = await loadSubject(event.target.value);
+    if (loaded) showToast(`Disciplina: ${activeSubject.label}`);
   } catch (error) {
     elements.subjectFilter.value = previousSubjectId;
     console.error(error);
     showToast('Não foi possível carregar a disciplina');
+  } finally {
+    elements.subjectFilter.disabled = false;
   }
 });
 elements.topicFilter.addEventListener('change', event => filterDeck(event.target.value));
