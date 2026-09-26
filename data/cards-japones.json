@@ -116,22 +116,48 @@
 			"id": "jp-011",
 			"topic": "Seção 1",
 			"type": "concept",
-			"question": "とし",
-			"answer": "years, cities, city",
+			"question": "年",
+			"answer": "year, years",
 			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
 			"questionDisplay": {
-				"text": "とし"
+				"text": "年",
+				"furigana": "とし"
 			}
 		},
 		{
 			"id": "jp-012",
 			"topic": "Seção 1",
 			"type": "concept",
-			"question": "years, cities, city",
-			"answer": "とし",
+			"question": "year, years",
+			"answer": "年",
 			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
 			"answerDisplay": {
-				"text": "とし"
+				"text": "年",
+				"furigana": "とし"
+			}
+		},
+		{
+			"id": "jp-012-city",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "都市",
+			"answer": "city, cities",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "都市",
+				"furigana": "とし"
+			}
+		},
+		{
+			"id": "jp-012-city-reverse",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "city, cities",
+			"answer": "都市",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "都市",
+				"furigana": "とし"
 			}
 		},
 		{
@@ -2227,7 +2253,7 @@
 			"topic": "Seção 1",
 			"type": "concept",
 			"question": "けん",
-			"answer": "Ken, ticket",
+			"answer": "Ken",
 			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
 			"questionDisplay": {
 				"text": "けん"
@@ -2237,11 +2263,35 @@
 			"id": "jp-202",
 			"topic": "Seção 1",
 			"type": "concept",
-			"question": "Ken, ticket",
+			"question": "Ken",
 			"answer": "けん",
 			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
 			"answerDisplay": {
 				"text": "けん"
+			}
+		},
+		{
+			"id": "jp-202-ticket",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "券",
+			"answer": "ticket",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "券",
+				"furigana": "けん"
+			}
+		},
+		{
+			"id": "jp-202-ticket-reverse",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ticket",
+			"answer": "券",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "券",
+				"furigana": "けん"
 			}
 		},
 		{
@@ -2403,7 +2453,7 @@
 			"topic": "Seção 1",
 			"type": "concept",
 			"question": "です",
-			"answer": "there is, it's, I'm",
+			"answer": "is, am, are (polite copula)",
 			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
 			"questionDisplay": {
 				"text": "です"
@@ -2413,7 +2463,7 @@
 			"id": "jp-218",
 			"topic": "Seção 1",
 			"type": "concept",
-			"question": "there is, it's, I'm",
+			"question": "is, am, are (polite copula)",
 			"answer": "です",
 			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
 			"answerDisplay": {

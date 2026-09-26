@@ -178,7 +178,6 @@ function renderCardText(element, text, display) {
 
   const localizedText = document.createElement('span');
   localizedText.className = 'localized-text';
-  localizedText.setAttribute('aria-label', text ?? display.text);
 
   if (!display.furigana) {
     localizedText.textContent = display.text;
