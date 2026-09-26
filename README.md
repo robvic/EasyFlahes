@@ -61,8 +61,8 @@ Os cards ficam em arquivos como `data/cards-dados-e-ia.json` e `data/cards-portu
 - `type`: `concept`, `code` ou `formula`
 - `question`: pergunta principal
 - `answer`: resposta explicativa
-- `questionDisplay`: objeto opcional para renderização especial da pergunta (por exemplo, kanji com furigana)
-- `answerDisplay`: objeto opcional para renderização especial da resposta (por exemplo, kanji com furigana)
+- `questionDisplay`: objeto opcional para renderização especial da pergunta, no formato `{ "text": "...", "furigana": "..." }` (`furigana` é opcional)
+- `answerDisplay`: objeto opcional para renderização especial da resposta, no formato `{ "text": "...", "furigana": "..." }` (`furigana` é opcional)
 - `source`: referência externa
 - `code`: trecho de código opcional
 - `formula`: expressão matemática em LaTeX opcional (renderizada no card)
