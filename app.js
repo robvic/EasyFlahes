@@ -46,6 +46,7 @@ let toastTimer;
 let waitingMathJax = false;
 let activeSubject = SUBJECTS[0];
 let subjectLoadToken = 0;
+let subjectLoadController;
 
 async function loadApp() {
   try {
@@ -66,11 +67,16 @@ async function loadSubject(subjectId) {
   const subject = SUBJECTS.find(item => item.id === subjectId);
   if (!subject) throw new Error('Disciplina inválida.');
   const currentLoadToken = ++subjectLoadToken;
+  subjectLoadController?.abort();
+  const controller = new AbortController();
+  subjectLoadController = controller;
 
-  const cardsResponse = await fetch(subject.dataFile);
+  const cardsResponse = await fetch(subject.dataFile, { signal: controller.signal });
   if (!cardsResponse.ok) throw new Error('Falha ao carregar a disciplina.');
+  if (currentLoadToken !== subjectLoadToken || controller.signal.aborted) return false;
 
   const cardsData = await cardsResponse.json();
+  if (currentLoadToken !== subjectLoadToken || controller.signal.aborted) return false;
   if (!Array.isArray(cardsData.cards)) throw new Error('Formato de cards inválido para a disciplina.');
   if (currentLoadToken !== subjectLoadToken) return false;
 
@@ -316,6 +322,7 @@ elements.subjectFilter.addEventListener('change', async event => {
     const loaded = await loadSubject(requestedSubjectId);
     if (loaded) showToast(`Disciplina: ${activeSubject.label}`);
   } catch (error) {
+    if (error.name === 'AbortError') return;
     if (activeSubject.id === previousSubjectId && elements.subjectFilter.value === requestedSubjectId) {
       elements.subjectFilter.value = previousSubjectId;
     } else {
