@@ -308,13 +308,18 @@ document.querySelector('#shuffleButton').addEventListener('click', shuffleDeck);
 document.querySelector('#resetButton').addEventListener('click', resetProgress);
 elements.subjectFilter.addEventListener('change', async event => {
   const previousSubjectId = activeSubject.id;
+  const requestedSubjectId = event.target.value;
   elements.subjectFilter.disabled = true;
 
   try {
-    const loaded = await loadSubject(event.target.value);
+    const loaded = await loadSubject(requestedSubjectId);
     if (loaded) showToast(`Disciplina: ${activeSubject.label}`);
   } catch (error) {
-    elements.subjectFilter.value = previousSubjectId;
+    if (activeSubject.id === previousSubjectId && elements.subjectFilter.value === requestedSubjectId) {
+      elements.subjectFilter.value = previousSubjectId;
+    } else {
+      elements.subjectFilter.value = activeSubject.id;
+    }
     console.error(error);
     showToast('Não foi possível carregar a disciplina');
   } finally {
