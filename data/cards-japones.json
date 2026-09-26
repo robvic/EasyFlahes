@@ -1,0 +1,2556 @@
+{
+	"version": 1,
+	"language": "ja-JP",
+	"cards": [
+		{
+			"id": "jp-001",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "とても",
+			"answer": "very",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "とても"
+			}
+		},
+		{
+			"id": "jp-002",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "very",
+			"answer": "とても",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "とても"
+			}
+		},
+		{
+			"id": "jp-003",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "きれい",
+			"answer": "clean",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "きれい"
+			}
+		},
+		{
+			"id": "jp-004",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "clean",
+			"answer": "きれい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "きれい"
+			}
+		},
+		{
+			"id": "jp-005",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "しずか",
+			"answer": "quiet",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "しずか"
+			}
+		},
+		{
+			"id": "jp-006",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "quiet",
+			"answer": "しずか",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "しずか"
+			}
+		},
+		{
+			"id": "jp-007",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "トロント",
+			"answer": "Toronto",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "トロント"
+			}
+		},
+		{
+			"id": "jp-008",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Toronto",
+			"answer": "トロント",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "トロント"
+			}
+		},
+		{
+			"id": "jp-009",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "にぎやか",
+			"answer": "lively",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "にぎやか"
+			}
+		},
+		{
+			"id": "jp-010",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "lively",
+			"answer": "にぎやか",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "にぎやか"
+			}
+		},
+		{
+			"id": "jp-011",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "とし",
+			"answer": "years, cities, city",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "とし"
+			}
+		},
+		{
+			"id": "jp-012",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "years, cities, city",
+			"answer": "とし",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "とし"
+			}
+		},
+		{
+			"id": "jp-013",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "どう",
+			"answer": "how (about), what, how",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "どう"
+			}
+		},
+		{
+			"id": "jp-014",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "how (about), what, how",
+			"answer": "どう",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "どう"
+			}
+		},
+		{
+			"id": "jp-015",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "日本",
+			"answer": "Japan, Japanese",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "日本",
+				"furigana": "にほん"
+			}
+		},
+		{
+			"id": "jp-016",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Japan, Japanese",
+			"answer": "日本",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "日本",
+				"furigana": "にほん"
+			}
+		},
+		{
+			"id": "jp-017",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おおさか",
+			"answer": "Osaka",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おおさか"
+			}
+		},
+		{
+			"id": "jp-018",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Osaka",
+			"answer": "おおさか",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おおさか"
+			}
+		},
+		{
+			"id": "jp-019",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "京都",
+			"answer": "Kyoto",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "京都",
+				"furigana": "きょうと"
+			}
+		},
+		{
+			"id": "jp-020",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Kyoto",
+			"answer": "京都",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "京都",
+				"furigana": "きょうと"
+			}
+		},
+		{
+			"id": "jp-021",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "にすんでいます",
+			"answer": "is living",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "にすんでいます"
+			}
+		},
+		{
+			"id": "jp-022",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "is living",
+			"answer": "にすんでいます",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "にすんでいます"
+			}
+		},
+		{
+			"id": "jp-023",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ニューヨーク",
+			"answer": "New York",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ニューヨーク"
+			}
+		},
+		{
+			"id": "jp-024",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "New York",
+			"answer": "ニューヨーク",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ニューヨーク"
+			}
+		},
+		{
+			"id": "jp-025",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "も",
+			"answer": "even, any, also",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "も"
+			}
+		},
+		{
+			"id": "jp-026",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "even, any, also",
+			"answer": "も",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "も"
+			}
+		},
+		{
+			"id": "jp-027",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "しゅっしん",
+			"answer": "from, origin, hometown",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "しゅっしん"
+			}
+		},
+		{
+			"id": "jp-028",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "from, origin, hometown",
+			"answer": "しゅっしん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "しゅっしん"
+			}
+		},
+		{
+			"id": "jp-029",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "東京",
+			"answer": "Tokyo",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "東京",
+				"furigana": "とうきょう"
+			}
+		},
+		{
+			"id": "jp-030",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Tokyo",
+			"answer": "東京",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "東京",
+				"furigana": "とうきょう"
+			}
+		},
+		{
+			"id": "jp-031",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "私",
+			"answer": "I",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "私",
+				"furigana": "わたし"
+			}
+		},
+		{
+			"id": "jp-032",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "I",
+			"answer": "私",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "私",
+				"furigana": "わたし"
+			}
+		},
+		{
+			"id": "jp-033",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ようこそ",
+			"answer": "welcome",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ようこそ"
+			}
+		},
+		{
+			"id": "jp-034",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "welcome",
+			"answer": "ようこそ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ようこそ"
+			}
+		},
+		{
+			"id": "jp-035",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おはようございます",
+			"answer": "good morning",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おはようございます"
+			}
+		},
+		{
+			"id": "jp-036",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "good morning",
+			"answer": "おはようございます",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おはようございます"
+			}
+		},
+		{
+			"id": "jp-037",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "はじめまして",
+			"answer": "nice to meet you, how do you do",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "はじめまして"
+			}
+		},
+		{
+			"id": "jp-038",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "nice to meet you, how do you do",
+			"answer": "はじめまして",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "はじめまして"
+			}
+		},
+		{
+			"id": "jp-039",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おなまえは",
+			"answer": "what's your name",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おなまえは"
+			}
+		},
+		{
+			"id": "jp-040",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "what's your name",
+			"answer": "おなまえは",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おなまえは"
+			}
+		},
+		{
+			"id": "jp-041",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "かばん",
+			"answer": "bag",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "かばん"
+			}
+		},
+		{
+			"id": "jp-042",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "bag",
+			"answer": "かばん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "かばん"
+			}
+		},
+		{
+			"id": "jp-043",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "中山",
+			"answer": "Nakayama",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "中山",
+				"furigana": "なかやま"
+			}
+		},
+		{
+			"id": "jp-044",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Nakayama",
+			"answer": "中山",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "中山",
+				"furigana": "なかやま"
+			}
+		},
+		{
+			"id": "jp-045",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "田中",
+			"answer": "Tanaka",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "田中",
+				"furigana": "たなか"
+			}
+		},
+		{
+			"id": "jp-046",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Tanaka",
+			"answer": "田中",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "田中",
+				"furigana": "たなか"
+			}
+		},
+		{
+			"id": "jp-047",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "山口",
+			"answer": "Yamaguchi",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "山口",
+				"furigana": "やまぐち"
+			}
+		},
+		{
+			"id": "jp-048",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Yamaguchi",
+			"answer": "山口",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "山口",
+				"furigana": "やまぐち"
+			}
+		},
+		{
+			"id": "jp-049",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "パスポート",
+			"answer": "passport",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "パスポート"
+			}
+		},
+		{
+			"id": "jp-050",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "passport",
+			"answer": "パスポート",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "パスポート"
+			}
+		},
+		{
+			"id": "jp-051",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "の",
+			"answer": "for, 's, one",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "の"
+			}
+		},
+		{
+			"id": "jp-052",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "for, 's, one",
+			"answer": "の",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "の"
+			}
+		},
+		{
+			"id": "jp-053",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "スマホ",
+			"answer": "smartphone",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "スマホ"
+			}
+		},
+		{
+			"id": "jp-054",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "smartphone",
+			"answer": "スマホ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "スマホ"
+			}
+		},
+		{
+			"id": "jp-055",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ちず",
+			"answer": "map",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ちず"
+			}
+		},
+		{
+			"id": "jp-056",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "map",
+			"answer": "ちず",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ちず"
+			}
+		},
+		{
+			"id": "jp-057",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "きっぷ",
+			"answer": "ticket",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "きっぷ"
+			}
+		},
+		{
+			"id": "jp-058",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ticket",
+			"answer": "きっぷ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "きっぷ"
+			}
+		},
+		{
+			"id": "jp-059",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "じゃないです",
+			"answer": "is not, we're not, aren't",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "じゃないです"
+			}
+		},
+		{
+			"id": "jp-060",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "is not, we're not, aren't",
+			"answer": "じゃないです",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "じゃないです"
+			}
+		},
+		{
+			"id": "jp-061",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ちかてつ",
+			"answer": "subway",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ちかてつ"
+			}
+		},
+		{
+			"id": "jp-062",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "subway",
+			"answer": "ちかてつ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ちかてつ"
+			}
+		},
+		{
+			"id": "jp-063",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "くうこう",
+			"answer": "airport",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "くうこう"
+			}
+		},
+		{
+			"id": "jp-064",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "airport",
+			"answer": "くうこう",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "くうこう"
+			}
+		},
+		{
+			"id": "jp-065",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "はん",
+			"answer": "thirty",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "はん"
+			}
+		},
+		{
+			"id": "jp-066",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "thirty",
+			"answer": "はん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "はん"
+			}
+		},
+		{
+			"id": "jp-067",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "すみません",
+			"answer": "excuse me",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "すみません"
+			}
+		},
+		{
+			"id": "jp-068",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "excuse me",
+			"answer": "すみません",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "すみません"
+			}
+		},
+		{
+			"id": "jp-069",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ごろ",
+			"answer": "around, about",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ごろ"
+			}
+		},
+		{
+			"id": "jp-070",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "around, about",
+			"answer": "ごろ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ごろ"
+			}
+		},
+		{
+			"id": "jp-071",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "いま",
+			"answer": "now, current",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "いま"
+			}
+		},
+		{
+			"id": "jp-072",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "now, current",
+			"answer": "いま",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "いま"
+			}
+		},
+		{
+			"id": "jp-073",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "一",
+			"answer": "one, an, a",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "一",
+				"furigana": "いち"
+			}
+		},
+		{
+			"id": "jp-074",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "one, an, a",
+			"answer": "一",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "一",
+				"furigana": "いち"
+			}
+		},
+		{
+			"id": "jp-075",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "二",
+			"answer": "two, 2",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "二",
+				"furigana": "に"
+			}
+		},
+		{
+			"id": "jp-076",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "two, 2",
+			"answer": "二",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "二",
+				"furigana": "に"
+			}
+		},
+		{
+			"id": "jp-077",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "なんじ",
+			"answer": "what time",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "なんじ"
+			}
+		},
+		{
+			"id": "jp-078",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "what time",
+			"answer": "なんじ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "なんじ"
+			}
+		},
+		{
+			"id": "jp-079",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "三",
+			"answer": "3, three, third",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "三",
+				"furigana": "さん"
+			}
+		},
+		{
+			"id": "jp-080",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "3, three, third",
+			"answer": "三",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "三",
+				"furigana": "さん"
+			}
+		},
+		{
+			"id": "jp-081",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "じ",
+			"answer": "o'clock",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "じ"
+			}
+		},
+		{
+			"id": "jp-082",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "o'clock",
+			"answer": "じ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "じ"
+			}
+		},
+		{
+			"id": "jp-083",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "に",
+			"answer": "to, in, as (a)",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "に"
+			}
+		},
+		{
+			"id": "jp-084",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "to, in, as (a)",
+			"answer": "に",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "に"
+			}
+		},
+		{
+			"id": "jp-085",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "いち",
+			"answer": "one, an",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "いち"
+			}
+		},
+		{
+			"id": "jp-086",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "one, an",
+			"answer": "いち",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "いち"
+			}
+		},
+		{
+			"id": "jp-087",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "やまぐち",
+			"answer": "Yamaguchi",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "やまぐち"
+			}
+		},
+		{
+			"id": "jp-088",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Yamaguchi",
+			"answer": "やまぐち",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "やまぐち"
+			}
+		},
+		{
+			"id": "jp-089",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おもしろい",
+			"answer": "interesting, fun, funny",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おもしろい"
+			}
+		},
+		{
+			"id": "jp-090",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "interesting, fun, funny",
+			"answer": "おもしろい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おもしろい"
+			}
+		},
+		{
+			"id": "jp-091",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "その",
+			"answer": "the, that, its",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "その"
+			}
+		},
+		{
+			"id": "jp-092",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "the, that, its",
+			"answer": "その",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "その"
+			}
+		},
+		{
+			"id": "jp-093",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "かわいい",
+			"answer": "cuter, cute, pretty",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "かわいい"
+			}
+		},
+		{
+			"id": "jp-094",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "cuter, cute, pretty",
+			"answer": "かわいい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "かわいい"
+			}
+		},
+		{
+			"id": "jp-095",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "あかるい",
+			"answer": "bright, cheerful, well-lit",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "あかるい"
+			}
+		},
+		{
+			"id": "jp-096",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "bright, cheerful, well-lit",
+			"answer": "あかるい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "あかるい"
+			}
+		},
+		{
+			"id": "jp-097",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "たなか",
+			"answer": "Tanaka",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "たなか"
+			}
+		},
+		{
+			"id": "jp-098",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Tanaka",
+			"answer": "たなか",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "たなか"
+			}
+		},
+		{
+			"id": "jp-099",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "この",
+			"answer": "this, these",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "この"
+			}
+		},
+		{
+			"id": "jp-100",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "this, these",
+			"answer": "この",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "この"
+			}
+		},
+		{
+			"id": "jp-101",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "なかやま",
+			"answer": "Nakayama",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "なかやま"
+			}
+		},
+		{
+			"id": "jp-102",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Nakayama",
+			"answer": "なかやま",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "なかやま"
+			}
+		},
+		{
+			"id": "jp-103",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "それら",
+			"answer": "they, them, those",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "それら"
+			}
+		},
+		{
+			"id": "jp-104",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "they, them, those",
+			"answer": "それら",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "それら"
+			}
+		},
+		{
+			"id": "jp-105",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "これら",
+			"answer": "these",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "これら"
+			}
+		},
+		{
+			"id": "jp-106",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "these",
+			"answer": "これら",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "これら"
+			}
+		},
+		{
+			"id": "jp-107",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "くつ",
+			"answer": "shoes, shoe",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "くつ"
+			}
+		},
+		{
+			"id": "jp-108",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "shoes, shoe",
+			"answer": "くつ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "くつ"
+			}
+		},
+		{
+			"id": "jp-109",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "しろい",
+			"answer": "white",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "しろい"
+			}
+		},
+		{
+			"id": "jp-110",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "white",
+			"answer": "しろい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "しろい"
+			}
+		},
+		{
+			"id": "jp-111",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "コート",
+			"answer": "coat",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "コート"
+			}
+		},
+		{
+			"id": "jp-112",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "coat",
+			"answer": "コート",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "コート"
+			}
+		},
+		{
+			"id": "jp-113",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "あかい",
+			"answer": "red",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "あかい"
+			}
+		},
+		{
+			"id": "jp-114",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "red",
+			"answer": "あかい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "あかい"
+			}
+		},
+		{
+			"id": "jp-115",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "わたしの",
+			"answer": "my, mine",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "わたしの"
+			}
+		},
+		{
+			"id": "jp-116",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "my, mine",
+			"answer": "わたしの",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "わたしの"
+			}
+		},
+		{
+			"id": "jp-117",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "かさ",
+			"answer": "umbrella, umbrellas",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "かさ"
+			}
+		},
+		{
+			"id": "jp-118",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "umbrella, umbrellas",
+			"answer": "かさ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "かさ"
+			}
+		},
+		{
+			"id": "jp-119",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ぼうし",
+			"answer": "hat, hats",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ぼうし"
+			}
+		},
+		{
+			"id": "jp-120",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "hat, hats",
+			"answer": "ぼうし",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ぼうし"
+			}
+		},
+		{
+			"id": "jp-121",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "そこ",
+			"answer": "there",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "そこ"
+			}
+		},
+		{
+			"id": "jp-122",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "there",
+			"answer": "そこ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "そこ"
+			}
+		},
+		{
+			"id": "jp-123",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "だいがく",
+			"answer": "university, college",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "だいがく"
+			}
+		},
+		{
+			"id": "jp-124",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "university, college",
+			"answer": "だいがく",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "だいがく"
+			}
+		},
+		{
+			"id": "jp-125",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "えき",
+			"answer": "station, train station, stations",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "えき"
+			}
+		},
+		{
+			"id": "jp-126",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "station, train station, stations",
+			"answer": "えき",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "えき"
+			}
+		},
+		{
+			"id": "jp-127",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "デパート",
+			"answer": "department store",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "デパート"
+			}
+		},
+		{
+			"id": "jp-128",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "department store",
+			"answer": "デパート",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "デパート"
+			}
+		},
+		{
+			"id": "jp-129",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ここ",
+			"answer": "here",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ここ"
+			}
+		},
+		{
+			"id": "jp-130",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "here",
+			"answer": "ここ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ここ"
+			}
+		},
+		{
+			"id": "jp-131",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "バスてい",
+			"answer": "bus stop",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "バスてい"
+			}
+		},
+		{
+			"id": "jp-132",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "bus stop",
+			"answer": "バスてい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "バスてい"
+			}
+		},
+		{
+			"id": "jp-133",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ホテル",
+			"answer": "hotel",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ホテル"
+			}
+		},
+		{
+			"id": "jp-134",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "hotel",
+			"answer": "ホテル",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ホテル"
+			}
+		},
+		{
+			"id": "jp-135",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "コンビニ",
+			"answer": "convenience store",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "コンビニ"
+			}
+		},
+		{
+			"id": "jp-136",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "convenience store",
+			"answer": "コンビニ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "コンビニ"
+			}
+		},
+		{
+			"id": "jp-137",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "どこ",
+			"answer": "where",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "どこ"
+			}
+		},
+		{
+			"id": "jp-138",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "where",
+			"answer": "どこ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "どこ"
+			}
+		},
+		{
+			"id": "jp-139",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ブラジルじん",
+			"answer": "Brazilian",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ブラジルじん"
+			}
+		},
+		{
+			"id": "jp-140",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Brazilian",
+			"answer": "ブラジルじん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ブラジルじん"
+			}
+		},
+		{
+			"id": "jp-141",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "イギリスじん",
+			"answer": "British",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "イギリスじん"
+			}
+		},
+		{
+			"id": "jp-142",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "British",
+			"answer": "イギリスじん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "イギリスじん"
+			}
+		},
+		{
+			"id": "jp-143",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ブラジル",
+			"answer": "Brazil",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ブラジル"
+			}
+		},
+		{
+			"id": "jp-144",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Brazil",
+			"answer": "ブラジル",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ブラジル"
+			}
+		},
+		{
+			"id": "jp-145",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "イギリス",
+			"answer": "Britain, the United Kingdom, British",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "イギリス"
+			}
+		},
+		{
+			"id": "jp-146",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Britain, the United Kingdom, British",
+			"answer": "イギリス",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "イギリス"
+			}
+		},
+		{
+			"id": "jp-147",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "にほんじん",
+			"answer": "Japanese",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "にほんじん"
+			}
+		},
+		{
+			"id": "jp-148",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Japanese",
+			"answer": "にほんじん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "にほんじん"
+			}
+		},
+		{
+			"id": "jp-149",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "カナダ",
+			"answer": "Canada",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "カナダ"
+			}
+		},
+		{
+			"id": "jp-150",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Canada",
+			"answer": "カナダ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "カナダ"
+			}
+		},
+		{
+			"id": "jp-151",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "アメリカじん",
+			"answer": "American",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "アメリカじん"
+			}
+		},
+		{
+			"id": "jp-152",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "American",
+			"answer": "アメリカじん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "アメリカじん"
+			}
+		},
+		{
+			"id": "jp-153",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "カナダじん",
+			"answer": "Canadian",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "カナダじん"
+			}
+		},
+		{
+			"id": "jp-154",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Canadian",
+			"answer": "カナダじん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "カナダじん"
+			}
+		},
+		{
+			"id": "jp-155",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "アメリカ",
+			"answer": "America, the USA, the US",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "アメリカ"
+			}
+		},
+		{
+			"id": "jp-156",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "America, the USA, the US",
+			"answer": "アメリカ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "アメリカ"
+			}
+		},
+		{
+			"id": "jp-157",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ちいさい",
+			"answer": "small, little",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ちいさい"
+			}
+		},
+		{
+			"id": "jp-158",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "small, little",
+			"answer": "ちいさい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ちいさい"
+			}
+		},
+		{
+			"id": "jp-159",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "にほん",
+			"answer": "Japan",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "にほん"
+			}
+		},
+		{
+			"id": "jp-160",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Japan",
+			"answer": "にほん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "にほん"
+			}
+		},
+		{
+			"id": "jp-161",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おおきい",
+			"answer": "big, large",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おおきい"
+			}
+		},
+		{
+			"id": "jp-162",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "big, large",
+			"answer": "おおきい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おおきい"
+			}
+		},
+		{
+			"id": "jp-163",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "か",
+			"answer": "or, is it?, that",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "か"
+			}
+		},
+		{
+			"id": "jp-164",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "or, is it?, that",
+			"answer": "か",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "か"
+			}
+		},
+		{
+			"id": "jp-165",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "いいえ",
+			"answer": "no",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "いいえ"
+			}
+		},
+		{
+			"id": "jp-166",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "no",
+			"answer": "いいえ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "いいえ"
+			}
+		},
+		{
+			"id": "jp-167",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "はい",
+			"answer": "yes",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "はい"
+			}
+		},
+		{
+			"id": "jp-168",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "yes",
+			"answer": "はい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "はい"
+			}
+		},
+		{
+			"id": "jp-169",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ケーキ",
+			"answer": "cake",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ケーキ"
+			}
+		},
+		{
+			"id": "jp-170",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "cake",
+			"answer": "ケーキ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ケーキ"
+			}
+		},
+		{
+			"id": "jp-171",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ピザ",
+			"answer": "pizza",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ピザ"
+			}
+		},
+		{
+			"id": "jp-172",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "pizza",
+			"answer": "ピザ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ピザ"
+			}
+		},
+		{
+			"id": "jp-173",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "それ",
+			"answer": "that (one), it, that",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "それ"
+			}
+		},
+		{
+			"id": "jp-174",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "that (one), it, that",
+			"answer": "それ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "それ"
+			}
+		},
+		{
+			"id": "jp-175",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "これ",
+			"answer": "this (one), these, this",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "これ"
+			}
+		},
+		{
+			"id": "jp-176",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "this (one), these, this",
+			"answer": "これ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "これ"
+			}
+		},
+		{
+			"id": "jp-177",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ラーメン",
+			"answer": "ramen",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ラーメン"
+			}
+		},
+		{
+			"id": "jp-178",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ramen",
+			"answer": "ラーメン",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ラーメン"
+			}
+		},
+		{
+			"id": "jp-179",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おいしい",
+			"answer": "good, delicious, tasty",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おいしい"
+			}
+		},
+		{
+			"id": "jp-180",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "good, delicious, tasty",
+			"answer": "おいしい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おいしい"
+			}
+		},
+		{
+			"id": "jp-181",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "は",
+			"answer": "is, with, regarding",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "は"
+			}
+		},
+		{
+			"id": "jp-182",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "is, with, regarding",
+			"answer": "は",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "は"
+			}
+		},
+		{
+			"id": "jp-183",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "カレー",
+			"answer": "curry",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "カレー"
+			}
+		},
+		{
+			"id": "jp-184",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "curry",
+			"answer": "カレー",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "カレー"
+			}
+		},
+		{
+			"id": "jp-185",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "またあした",
+			"answer": "see you tomorrow",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "またあした"
+			}
+		},
+		{
+			"id": "jp-186",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "see you tomorrow",
+			"answer": "またあした",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "またあした"
+			}
+		},
+		{
+			"id": "jp-187",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "じゃあね",
+			"answer": "bye",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "じゃあね"
+			}
+		},
+		{
+			"id": "jp-188",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "bye",
+			"answer": "じゃあね",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "じゃあね"
+			}
+		},
+		{
+			"id": "jp-189",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "さん",
+			"answer": "Mr., Miss, Mrs.",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "さん"
+			}
+		},
+		{
+			"id": "jp-190",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Mr., Miss, Mrs.",
+			"answer": "さん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "さん"
+			}
+		},
+		{
+			"id": "jp-191",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "こんばんは",
+			"answer": "tonight, good evening, this evening",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "こんばんは"
+			}
+		},
+		{
+			"id": "jp-192",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "tonight, good evening, this evening",
+			"answer": "こんばんは",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "こんばんは"
+			}
+		},
+		{
+			"id": "jp-193",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "なおみ",
+			"answer": "Naomi",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "なおみ"
+			}
+		},
+		{
+			"id": "jp-194",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Naomi",
+			"answer": "なおみ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "なおみ"
+			}
+		},
+		{
+			"id": "jp-195",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "はな",
+			"answer": "flowers, flower, Hana",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "はな"
+			}
+		},
+		{
+			"id": "jp-196",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "flowers, flower, Hana",
+			"answer": "はな",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "はな"
+			}
+		},
+		{
+			"id": "jp-197",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "どうぞよろしく",
+			"answer": "nice to meet you",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "どうぞよろしく"
+			}
+		},
+		{
+			"id": "jp-198",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "nice to meet you",
+			"answer": "どうぞよろしく",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "どうぞよろしく"
+			}
+		},
+		{
+			"id": "jp-199",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "こんにちは",
+			"answer": "hello, hi",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "こんにちは"
+			}
+		},
+		{
+			"id": "jp-200",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "hello, hi",
+			"answer": "こんにちは",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "こんにちは"
+			}
+		},
+		{
+			"id": "jp-201",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "けん",
+			"answer": "Ken, ticket",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "けん"
+			}
+		},
+		{
+			"id": "jp-202",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "Ken, ticket",
+			"answer": "けん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "けん"
+			}
+		},
+		{
+			"id": "jp-203",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "がくせい",
+			"answer": "student, students",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "がくせい"
+			}
+		},
+		{
+			"id": "jp-204",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "student, students",
+			"answer": "がくせい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "がくせい"
+			}
+		},
+		{
+			"id": "jp-205",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ひと",
+			"answer": "person, people",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ひと"
+			}
+		},
+		{
+			"id": "jp-206",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "person, people",
+			"answer": "ひと",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ひと"
+			}
+		},
+		{
+			"id": "jp-207",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "かっこいい",
+			"answer": "cool, good-looking, stylish",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "かっこいい"
+			}
+		},
+		{
+			"id": "jp-208",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "cool, good-looking, stylish",
+			"answer": "かっこいい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "かっこいい"
+			}
+		},
+		{
+			"id": "jp-209",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "べんごし",
+			"answer": "lawyer, lawyers",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "べんごし"
+			}
+		},
+		{
+			"id": "jp-210",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "lawyer, lawyers",
+			"answer": "べんごし",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "べんごし"
+			}
+		},
+		{
+			"id": "jp-211",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "やさしい",
+			"answer": "kind, easy, nice",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "やさしい"
+			}
+		},
+		{
+			"id": "jp-212",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "kind, easy, nice",
+			"answer": "やさしい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "やさしい"
+			}
+		},
+		{
+			"id": "jp-213",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "せんせい",
+			"answer": "teacher, Professor, teachers",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "せんせい"
+			}
+		},
+		{
+			"id": "jp-214",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "teacher, Professor, teachers",
+			"answer": "せんせい",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "せんせい"
+			}
+		},
+		{
+			"id": "jp-215",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "いしゃ",
+			"answer": "doctor, doctors",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "いしゃ"
+			}
+		},
+		{
+			"id": "jp-216",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "doctor, doctors",
+			"answer": "いしゃ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "いしゃ"
+			}
+		},
+		{
+			"id": "jp-217",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "です",
+			"answer": "there is, it's, I'm",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "です"
+			}
+		},
+		{
+			"id": "jp-218",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "there is, it's, I'm",
+			"answer": "です",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "です"
+			}
+		},
+		{
+			"id": "jp-219",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "と",
+			"answer": "and, that, door",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "と"
+			}
+		},
+		{
+			"id": "jp-220",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "and, that, door",
+			"answer": "と",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "と"
+			}
+		},
+		{
+			"id": "jp-221",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "みず",
+			"answer": "water",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "みず"
+			}
+		},
+		{
+			"id": "jp-222",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "water",
+			"answer": "みず",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "みず"
+			}
+		},
+		{
+			"id": "jp-223",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ごはん",
+			"answer": "rice, meal, meals",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ごはん"
+			}
+		},
+		{
+			"id": "jp-224",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "rice, meal, meals",
+			"answer": "ごはん",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ごはん"
+			}
+		},
+		{
+			"id": "jp-225",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "すし",
+			"answer": "sushi",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "すし"
+			}
+		},
+		{
+			"id": "jp-226",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "sushi",
+			"answer": "すし",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "すし"
+			}
+		},
+		{
+			"id": "jp-227",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "ください",
+			"answer": "please",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "ください"
+			}
+		},
+		{
+			"id": "jp-228",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "please",
+			"answer": "ください",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "ください"
+			}
+		},
+		{
+			"id": "jp-229",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "おちゃ",
+			"answer": "green teas, green tea, tea",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"questionDisplay": {
+				"text": "おちゃ"
+			}
+		},
+		{
+			"id": "jp-230",
+			"topic": "Seção 1",
+			"type": "concept",
+			"question": "green teas, green tea, tea",
+			"answer": "おちゃ",
+			"source": "https://github.com/Cerno-b/anki-duolingo-japanese/blob/main/by_section%2Fsection_1_completed.txt",
+			"answerDisplay": {
+				"text": "おちゃ"
+			}
+		}
+	]
+}

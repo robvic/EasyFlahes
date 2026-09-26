@@ -34,6 +34,12 @@ const SUBJECTS = [
     label: 'Português',
     eyebrow: 'PORTUGUÊS / DECK 02',
     dataFile: 'data/cards-portugues.json'
+  },
+  {
+    id: 'japones',
+    label: 'Japonês',
+    eyebrow: 'JAPONÊS / DECK 03',
+    dataFile: 'data/cards-japones.json'
   }
 ];
 
@@ -144,8 +150,8 @@ function renderCard() {
   elements.flashcard.classList.remove('flipped');
   elements.flashcard.setAttribute('aria-pressed', 'false');
   elements.ratings.classList.remove('visible');
-  elements.question.textContent = card.question;
-  elements.answer.textContent = card.answer;
+  renderCardText(elements.question, card.question, card.questionDisplay);
+  renderCardText(elements.answer, card.answer, card.answerDisplay);
   elements.topic.textContent = card.topic;
   elements.backTopic.textContent = card.topic;
   elements.cardType.textContent = card.type === 'code' ? 'Python' : card.type === 'formula' ? 'Fórmula' : 'Conceito';
@@ -160,6 +166,34 @@ function renderCard() {
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
   elements.image.alt = card.image ? `Referência visual para ${card.topic}` : '';
+}
+
+function renderCardText(element, text, display) {
+  element.replaceChildren();
+
+  if (!display?.text) {
+    element.textContent = text ?? '';
+    return;
+  }
+
+  const localizedText = document.createElement('span');
+  localizedText.className = 'localized-text';
+
+  if (!display.furigana) {
+    localizedText.textContent = display.text;
+    element.append(localizedText);
+    return;
+  }
+
+  const ruby = document.createElement('ruby');
+  ruby.append(document.createTextNode(display.text));
+
+  const reading = document.createElement('rt');
+  reading.textContent = display.furigana;
+  ruby.append(reading);
+
+  localizedText.append(ruby);
+  element.append(localizedText);
 }
 
 function renderEmptyDeck() {
