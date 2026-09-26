@@ -71,6 +71,7 @@ async function loadSubject(subjectId) {
   if (!cardsResponse.ok) throw new Error('Falha ao carregar a disciplina.');
 
   const cardsData = await cardsResponse.json();
+  if (!Array.isArray(cardsData.cards)) throw new Error('Formato de cards inválido para a disciplina.');
   if (currentLoadToken !== subjectLoadToken) return false;
 
   activeSubject = subject;
