@@ -43,3 +43,5 @@
 - https://docs.smith.langchain.com/observability/concepts
 - https://docs.langchain.com/oss/python/langgraph/graph-api.md
 - https://docs.langchain.com/oss/python/langgraph/use-graph-api.md
+- https://www.normaculta.com.br/
+- https://www.normaculta.com.br/gramatica/
