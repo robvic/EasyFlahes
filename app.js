@@ -21,7 +21,9 @@ const elements = {
   deckEyebrow: document.querySelector('#deckEyebrow'),
   toast: document.querySelector('#toast')
 };
-const renderLocalizedCardText = window.renderCardText;
+const renderLocalizedCardText = window.renderCardText ?? ((element, text) => {
+  element.textContent = text ?? '';
+});
 
 const SUBJECTS = [
   {
