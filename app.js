@@ -115,9 +115,7 @@ function renderSubjectInfo() {
 }
 
 function populateTopics() {
-  elements.topicFilter.length = 1;
-  elements.topicFilter.options[0].textContent = 'Todos os tópicos';
-  elements.topicFilter.options[0].value = 'all';
+  elements.topicFilter.replaceChildren(new Option('Todos os tópicos', 'all'));
   const topics = [...new Set(allCards.map(card => card.topic))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
   topics.forEach(topic => elements.topicFilter.add(new Option(topic, topic)));
 }
