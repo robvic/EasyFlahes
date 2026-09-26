@@ -21,7 +21,7 @@ const elements = {
   deckEyebrow: document.querySelector('#deckEyebrow'),
   toast: document.querySelector('#toast')
 };
-const isTestEnvironment = typeof window !== 'undefined' && window.__EASY_FLASHES_TEST__ === true;
+const renderLocalizedCardText = window.renderCardText;
 
 const SUBJECTS = [
   {
@@ -151,8 +151,8 @@ function renderCard() {
   elements.flashcard.classList.remove('flipped');
   elements.flashcard.setAttribute('aria-pressed', 'false');
   elements.ratings.classList.remove('visible');
-  renderCardText(elements.question, card.question, card.questionDisplay);
-  renderCardText(elements.answer, card.answer, card.answerDisplay);
+  renderLocalizedCardText(elements.question, card.question, card.questionDisplay);
+  renderLocalizedCardText(elements.answer, card.answer, card.answerDisplay);
   elements.topic.textContent = card.topic;
   elements.backTopic.textContent = card.topic;
   elements.cardType.textContent = card.type === 'code' ? 'Python' : card.type === 'formula' ? 'Fórmula' : 'Conceito';
@@ -167,34 +167,6 @@ function renderCard() {
   elements.image.hidden = !card.image;
   elements.image.src = card.image ?? '';
   elements.image.alt = card.image ? `Referência visual para ${card.topic}` : '';
-}
-
-function renderCardText(element, text, display) {
-  element.replaceChildren();
-
-  if (!display?.text) {
-    element.textContent = text ?? '';
-    return;
-  }
-
-  const localizedText = document.createElement('span');
-  localizedText.className = 'localized-text';
-
-  if (!display.furigana) {
-    localizedText.textContent = display.text;
-    element.append(localizedText);
-    return;
-  }
-
-  const ruby = document.createElement('ruby');
-  ruby.append(document.createTextNode(display.text));
-
-  const reading = document.createElement('rt');
-  reading.textContent = display.furigana;
-  ruby.append(reading);
-
-  localizedText.append(ruby);
-  element.append(localizedText);
 }
 
 function renderEmptyDeck() {
@@ -338,57 +310,51 @@ function showToast(message) {
   toastTimer = window.setTimeout(() => elements.toast.classList.remove('visible'), 1600);
 }
 
-if (!isTestEnvironment) {
-  elements.flashcard.addEventListener('click', event => {
-    if (!event.target.closest('a')) flipCard();
-  });
-  elements.flashcard.addEventListener('keydown', event => {
-    if (event.key === 'Enter' && event.target === elements.flashcard) flipCard();
-  });
-  document.querySelector('#previousButton').addEventListener('click', () => move(-1));
-  document.querySelector('#nextButton').addEventListener('click', () => move(1));
-  document.querySelector('#shuffleButton').addEventListener('click', shuffleDeck);
-  document.querySelector('#resetButton').addEventListener('click', resetProgress);
-  elements.subjectFilter.addEventListener('change', async event => {
-    const previousSubjectId = activeSubject.id;
-    const requestedSubjectId = event.target.value;
-    elements.subjectFilter.disabled = true;
+elements.flashcard.addEventListener('click', event => {
+  if (!event.target.closest('a')) flipCard();
+});
+elements.flashcard.addEventListener('keydown', event => {
+  if (event.key === 'Enter' && event.target === elements.flashcard) flipCard();
+});
+document.querySelector('#previousButton').addEventListener('click', () => move(-1));
+document.querySelector('#nextButton').addEventListener('click', () => move(1));
+document.querySelector('#shuffleButton').addEventListener('click', shuffleDeck);
+document.querySelector('#resetButton').addEventListener('click', resetProgress);
+elements.subjectFilter.addEventListener('change', async event => {
+  const previousSubjectId = activeSubject.id;
+  const requestedSubjectId = event.target.value;
+  elements.subjectFilter.disabled = true;
 
-    try {
-      const loaded = await loadSubject(requestedSubjectId);
-      if (loaded) showToast(`Disciplina: ${activeSubject.label}`);
-    } catch (error) {
-      if (error.name === 'AbortError') return;
-      if (activeSubject.id === previousSubjectId && elements.subjectFilter.value === requestedSubjectId) {
-        elements.subjectFilter.value = previousSubjectId;
-      } else {
-        elements.subjectFilter.value = activeSubject.id;
-      }
-      console.error(error);
-      showToast('Não foi possível carregar a disciplina');
-    } finally {
-      elements.subjectFilter.disabled = false;
+  try {
+    const loaded = await loadSubject(requestedSubjectId);
+    if (loaded) showToast(`Disciplina: ${activeSubject.label}`);
+  } catch (error) {
+    if (error.name === 'AbortError') return;
+    if (activeSubject.id === previousSubjectId && elements.subjectFilter.value === requestedSubjectId) {
+      elements.subjectFilter.value = previousSubjectId;
+    } else {
+      elements.subjectFilter.value = activeSubject.id;
     }
-  });
-  elements.topicFilter.addEventListener('change', event => filterDeck(event.target.value));
-  elements.ratings.addEventListener('click', event => {
-    const button = event.target.closest('[data-rating]');
-    if (button) rateCard(button.dataset.rating);
-  });
+    console.error(error);
+    showToast('Não foi possível carregar a disciplina');
+  } finally {
+    elements.subjectFilter.disabled = false;
+  }
+});
+elements.topicFilter.addEventListener('change', event => filterDeck(event.target.value));
+elements.ratings.addEventListener('click', event => {
+  const button = event.target.closest('[data-rating]');
+  if (button) rateCard(button.dataset.rating);
+});
 
-  document.addEventListener('keydown', event => {
-    if (event.target.matches('select, button, a')) return;
-    if (event.code === 'Space') { event.preventDefault(); flipCard(); }
-    if (event.key === 'ArrowLeft') move(-1);
-    if (event.key === 'ArrowRight') move(1);
-    if (elements.flashcard.classList.contains('flipped') && ['1', '2', '3'].includes(event.key)) {
-      rateCard({ 1: 'again', 2: 'hard', 3: 'known' }[event.key]);
-    }
-  });
+document.addEventListener('keydown', event => {
+  if (event.target.matches('select, button, a')) return;
+  if (event.code === 'Space') { event.preventDefault(); flipCard(); }
+  if (event.key === 'ArrowLeft') move(-1);
+  if (event.key === 'ArrowRight') move(1);
+  if (elements.flashcard.classList.contains('flipped') && ['1', '2', '3'].includes(event.key)) {
+    rateCard({ 1: 'again', 2: 'hard', 3: 'known' }[event.key]);
+  }
+});
 
-  loadApp();
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { renderCardText };
-}
+loadApp();

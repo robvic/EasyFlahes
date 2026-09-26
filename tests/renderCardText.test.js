@@ -35,15 +35,12 @@ function createMockNode(tagName = 'div') {
   return node;
 }
 
-global.window = { __EASY_FLASHES_TEST__: true };
 global.document = {
-  querySelector: () => createMockNode(),
   createElement: tagName => createMockNode(tagName),
-  createTextNode: value => value,
-  addEventListener: () => {}
+  createTextNode: value => value
 };
 
-const { renderCardText } = require('../app.js');
+const { renderCardText } = require('../card-text.js');
 
 test('renderCardText keeps plain text cards unchanged', () => {
   const target = createMockNode('strong');
